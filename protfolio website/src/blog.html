@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resume</title>
+    <link rel="stylesheet" href="./output.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      src="https://kit.fontawesome.com/d109a23a31.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      .card:hover {
+        overflow: hidden;
+        .images {
+          overflow: hidden;
+          border-radius: 12px;
+          --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1),
+            0 8px 10px -6px rgb(0 0 0 / 0.1);
+          --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color),
+            0 8px 10px -6px var(--tw-shadow-color);
+          box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+            var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+        }
+        img {
+          transform: scale(1.18);
+          transition: 0.5s all ease-in-out;
+        }
+        .h1-hover {
+          color: #eab308;
+        }
+      }
+    </style>
+  </head>
+  <body class="bg-[#081b29] text-[#ededed] relative">
+    <!-- Navbar -->
+    <header
+      class="bg-[#081b29] sticky w-full top-0 left-0 z-50 transition duration-500 scroll-smooth"
+    >
+      <div
+        class="container mx-auto flex sm:flex-row flex-col sm:px-4 lg:px-20 md:px-10 sm:justify-between sm:items-center py-4"
+      >
+        <!-- Logo -->
+        <h1
+          class="text-[#00abf0] text-xl lg:text-3xl font-bold font-serif sm:pl-0 pl-4"
+        >
+          Portfolio
+        </h1>
+        <!-- Mobile Menu Button -->
+        <button
+          id="menu-btn"
+          class="text-[#00abf0] sm:hidden block pr-3 text-3xl focus:outline-none absolute right-1"
+        >
+          <ion-icon name="menu-outline"></ion-icon>
+        </button>
+        <!--  Nav Links -->
+        <nav
+          id="menu"
+          class="hidden sm:flex flex-col sm:flex-row sm:items-center sm:gap-4 lg:gap-16 md:gap-10 divide-y sm:w-auto w-full sm:divide-y-0 divide-slate-700 font-semibold sm:text-[14px] lg:text-[18px] md:text-[16px] sm:pt-0 sm:px-0 pt-3 px-4"
+        >
+          <a
+            
+            id="home"
+            class="hover:text-[#00abf0] block sm:inline py-3 sm:py-0 transition duration-300 cursor-pointer"
+            >Home</a
+          >
+          <a
+            
+            id="about"
+            class="hover:text-[#00abf0] block sm:inline py-3 sm:py-0 transition duration-300 cursor-pointer"
+            >About</a
+          >
+          <a
+            
+            id="resume"
+            class="hover:text-[#00abf0] block sm:inline py-3 sm:py-0 transition duration-300 cursor-pointer"
+            >Resume</a
+          >
+          <a
+            
+            id="blog"
+            class="hover:text-[#00abf0] block sm:inline py-3 sm:py-0 transition duration-300 cursor-pointer"
+            >Blog</a
+          >
+          <a
+            
+            id="contact"
+            class="hover:text-[#00abf0] block sm:inline py-3 sm:py-0 transition duration-300 cursor-pointer"
+            >Contact</a
+          >
+        </nav>
+      </div>
+    </header>
+    <div
+      class="container max-w-full flex justify-around lg:px-10 md:px-7 px-4 my-8"
+    >
+      <!-- cards -->
+      <div class="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-10">
+        <a href="#">
+          <div
+            class="overflow-hidden bg-gradient-to-br from-[#113853] via-[#18465f] to-[#226080] shadow-lg hover:shadow-[0_0_20px_10px_rgba(0,171,240,0.7)] transition duration-500 ease-in-out rounded-2xl sm:h-[470px] h-full lg:m-8 xl:m-0 xl:w-[400px] md:w-[365px] sm:w-[300px] w-full card"
+          >
+            <div class="rounded-xl images">
+              <img
+                src="/imgs/blog-1.jpg"
+                alt="no_image"
+                class="overflow-hidden rounded-2xl shadow-xl card_image"
+              />
+            </div>
+            <div class="pt-8 pl-5 pr-2 pb-2 space-y-2">
+              <p class="text-lg text-[#9a9a9a]">Design . Fab 23, 2022</p>
+              <h1 class="text-2xl h1-hover">Desgin Conferences</h1>
+              <p class="text-[#9a9a9a] text-lg">
+                Veritatis et quasi architecto beatae vitae dicta sunt,
+                explicabo.
+              </p>
+            </div>
+          </div>
+        </a>
+        <a href="#">
+          <div
+            class="bg-gradient-to-br from-[#113853] via-[#18465f] to-[#226080] shadow-lg hover:shadow-[0_0_20px_10px_rgba(0,171,240,0.7)] transition duration-500 ease-in-out rounded-2xl sm:h-[470px] h-full xl:w-[400px] lg:m-8 xl:m-0 md:w-[365px] sm:w-[300px] card"
+          >
+            <div class="rounded-xl images">
+              <img
+                src="/imgs/blog-2.jpg"
+                alt="no_image"
+                class="overflow-hidden rounded-2xl shadow-xl card_image"
+              />
+            </div>
+            <div class="pt-8 pl-5 pr-2 pb-2 space-y-2">
+              <p class="text-lg text-[#9a9a9a]">Design . Fab 23, 2022</p>
+              <h1 class="text-2xl h1-hover">Best Fonts Every Designer</h1>
+              <p class="text-[#9a9a9a] text-lg">
+                Sed ut perspiciatis, nam libero tempare, cum soluta nobis est
+                eligendi.
+              </p>
+            </div>
+          </div>
+        </a>
+        <a href="#">
+          <div
+            class="bg-gradient-to-br from-[#113853] via-[#18465f] to-[#226080] shadow-lg hover:shadow-[0_0_20px_10px_rgba(0,171,240,0.7)] transition duration-500 ease-in-out rounded-2xl sm:h-[470px] h-full xl:w-[400px] lg:m-8 xl:m-0 md:w-[365px] sm:w-[300px] card"
+          >
+            <div class="rounded-xl images">
+              <img
+                src="/imgs/blog-3.jpg"
+                alt="no_image"
+                class="overflow-hidden rounded-2xl shadow-xl card_image"
+              />
+            </div>
+            <div class="pt-8 pl-5 pr-2 pb-2 space-y-2">
+              <p class="text-lg text-[#9a9a9a]">Design . Fab 23, 2022</p>
+              <h1 class="text-2xl h1-hover">Desgin Digest #80</h1>
+              <p class="text-[#9a9a9a] text-lg">
+                Excepteur sint occaecat cupidatat no proident, quis nostrum
+                exercitationem ullam corporis suscipit.
+              </p>
+            </div>
+          </div>
+        </a>
+        <a href="#">
+          <div
+            class="bg-gradient-to-br from-[#113853] via-[#18465f] to-[#226080] shadow-lg hover:shadow-[0_0_20px_10px_rgba(0,171,240,0.7)] transition duration-500 ease-in-out rounded-2xl sm:h-[470px] h-full xl:w-[400px] lg:m-8 xl:m-0 md:w-[365px] sm:w-[300px] card"
+          >
+            <div class="rounded-xl images">
+              <img
+                src="/imgs/blog-4.jpg"
+                alt="no_image"
+                class="overflow-hidden rounded-2xl shadow-xl card_image"
+              />
+            </div>
+            <div class="pt-8 pl-5 pr-2 pb-2 space-y-2">
+              <p class="text-lg text-[#9a9a9a]">Design . Fab 23, 2022</p>
+              <h1 class="text-2xl h1-hover">UI Interactions Of The Week</h1>
+              <p class="text-[#9a9a9a] text-lg">
+                Enim ad minim veniam, consectetur adipiscing elit, quis nostrud
+                exercitation ullamco laboris nisi.
+              </p>
+            </div>
+          </div>
+        </a>
+        <a href="#">
+          <div
+            class="bg-gradient-to-br from-[#113853] via-[#18465f] to-[#226080] shadow-lg hover:shadow-[0_0_20px_10px_rgba(0,171,240,0.7)] transition duration-500 ease-in-out rounded-2xl sm:h-[470px] h-full xl:w-[400px] lg:m-8 xl:m-0 md:w-[365px] sm:w-[300px] card"
+          >
+            <div class="rounded-xl images">
+              <img
+                src="/imgs/blog-5.jpg"
+                alt="no_image"
+                class="overflow-hidden rounded-2xl shadow-xl card_image"
+              />
+            </div>
+            <div class="pt-8 pl-5 pr-2 pb-2 space-y-2">
+              <p class="text-lg text-[#9a9a9a]">Design . Fab 23, 2022</p>
+              <h1 class="text-2xl h1-hover">The Forgotten Art Of Spacing</h1>
+              <p class="text-[#9a9a9a] text-lg">
+                Maxime placeat, sed do eiussmod tempor indididunt ut labore et
+                dolore manga aliqua.
+              </p>
+            </div>
+          </div>
+        </a>
+        <a href="#">
+          <div
+            class="bg-gradient-to-br from-[#113853] via-[#18465f] to-[#226080] shadow-lg hover:shadow-[0_0_20px_10px_rgba(0,171,240,0.7)] transition duration-500 ease-in-out rounded-2xl sm:h-[470px] h-full xl:w-[400px] lg:m-8 xl:m-0 md:w-[365px] sm:w-[300px] card"
+          >
+            <div class="rounded-xl images">
+              <img
+                src="/imgs/blog-6.jpg"
+                alt="no_image"
+                class="overflow-hidden rounded-2xl shadow-xl card_image"
+              />
+            </div>
+            <div class="pt-8 pl-5 pr-2 pb-2 space-y-2">
+              <p class="text-lg text-[#9a9a9a]">Design . Fab 23, 2022</p>
+              <h1 class="text-2xl h1-hover">Desgin Digest #79</h1>
+              <p class="text-[#9a9a9a] text-lg">
+                Optio cumque nihil impedit uo minus quod macime placeat, velit
+                esse cillum.
+              </p>
+            </div>
+          </div>
+        </a>
+        <a href="#">
+          <div
+            class="bg-gradient-to-br from-[#113853] via-[#18465f] to-[#226080] shadow-lg hover:shadow-[0_0_20px_10px_rgba(0,171,240,0.7)] transition duration-500 ease-in-out rounded-2xl sm:h-[470px] h-full xl:w-[400px] lg:m-8 xl:m-0 md:w-[365px] sm:w-[300px] card"
+          >
+            <div class="rounded-xl images">
+              <img
+                src="/imgs/blog-7.jpg"
+                alt="no_image"
+                class="overflow-hidden rounded-2xl shadow-xl card_image"
+              />
+            </div>
+            <div class="pt-8 pl-5 pr-2 pb-2 space-y-2">
+              <p class="text-lg text-[#9a9a9a]">Design . Fab 23, 2022</p>
+              <h1 class="text-2xl h1-hover">A Journey to the Past</h1>
+              <p class="text-[#9a9a9a] text-lg">
+                Relive moments of the past with modern artistic touches.
+              </p>
+            </div>
+          </div>
+        </a>
+        <a href="#">
+          <div
+            class="bg-gradient-to-br from-[#113853] via-[#18465f] to-[#226080] shadow-lg hover:shadow-[0_0_20px_10px_rgba(0,171,240,0.7)] transition duration-500 ease-in-out rounded-2xl sm:h-[470px] h-full xl:w-[400px] lg:m-8 xl:m-0 md:w-[365px] sm:w-[300px] card"
+          >
+            <div class="rounded-xl images">
+              <img
+                src="/imgs/blog-8.jpg"
+                alt="no_image"
+                class="overflow-hidden rounded-2xl shadow-xl card_image"
+              />
+            </div>
+            <div class="pt-8 pl-5 pr-2 pb-2 space-y-2">
+              <p class="text-lg text-[#9a9a9a]">Design . Fab 23, 2022</p>
+              <h1 class="text-2xl h1-hover">Modern Spaces for Minds</h1>
+              <p class="text-[#9a9a9a] text-lg">
+                Embrace the elegance of contemporary architecture, where
+                simplicity meets.
+              </p>
+            </div>
+          </div>
+        </a>
+        <a href="#">
+          <div
+            class="bg-gradient-to-br from-[#113853] via-[#18465f] to-[#226080] shadow-lg hover:shadow-[0_0_20px_10px_rgba(0,171,240,0.7)] transition duration-500 ease-in-out rounded-2xl sm:h-[470px] h-full xl:w-[400px] lg:m-8 xl:m-0 md:w-[365px] sm:w-[300px] card"
+          >
+            <div class="rounded-xl images">
+              <img
+                src="/imgs/blog-9.jpg"
+                alt="no_image"
+                class="overflow-hidden rounded-2xl shadow-xl card_image"
+              />
+            </div>
+            <div class="pt-8 pl-5 pr-2 pb-2 space-y-2">
+              <p class="text-lg text-[#9a9a9a]">Design . Fab 23, 2022</p>
+              <h1 class="text-2xl h1-hover">Architectural Marvels</h1>
+              <p class="text-[#9a9a9a] text-lg">
+                Explore the beauty of intricate designs and majestic structures
+                that stand the test of time.
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+
+  </body>
+</html>

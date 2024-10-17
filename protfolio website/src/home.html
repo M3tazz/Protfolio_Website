@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="./output.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      src="https://kit.fontawesome.com/d109a23a31.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      .icon-layer {
+        width: 45px;
+        height: 45px;
+        transition: transform 0.3s;
+        position: relative;
+      }
+
+      .icon-layer:hover {
+        transform: rotate(-35deg) skew(20deg);
+      }
+
+      .icon-span,
+      .icon-i {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        border: 1px solid #ededed;
+        border-radius: 10px;
+        transition: all 0.3s;
+        font-size: 20px;
+        line-height: 55px;
+        /* align-items: center; */
+        text-align: center;
+      }
+
+      .icon-layer:hover .span-1 {
+        opacity: 0.2;
+      }
+
+      .icon-layer:hover .span-2 {
+        opacity: 0.4;
+        transform: translate(5px, -5px);
+      }
+
+      .icon-layer:hover .span-3 {
+        opacity: 0.6;
+        transform: translate(10px, -10px);
+      }
+
+      .icon-layer:hover .span-4 {
+        opacity: 0.8;
+        transform: translate(15px, -15px);
+      }
+      .gradient-text {
+        background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af, #515bd4);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    </style>
+  </head>
+  <body class="bg-[#081b29] text-[#ededed] relative">
+    <!-- Navbar -->
+    <header class="bg-[#081b29] sticky w-full top-0 left-0 z-50">
+      <div
+        class="container mx-auto flex sm:flex-row flex-col sm:px-4 lg:px-20 md:px-10 sm:justify-between sm:items-center py-4"
+      >
+        <!-- Logo -->
+        <h1
+          class="text-[#00abf0] text-xl lg:text-3xl font-bold font-serif sm:pl-0 pl-4"
+        >
+          Portfolio
+        </h1>
+        <!-- Mobile Menu Button -->
+        <button
+          id="menu-btn"
+          class="text-[#00abf0] sm:hidden block pr-3 text-3xl focus:outline-none absolute right-1"
+        >
+          <ion-icon name="menu-outline"></ion-icon>
+        </button>
+        <!--  Nav Links -->
+        <nav
+          id="menu"
+          class="hidden sm:flex flex-col sm:flex-row sm:items-center sm:gap-4 lg:gap-16 md:gap-10 divide-y sm:w-auto w-full sm:divide-y-0 divide-slate-700 font-semibold sm:text-[14px] lg:text-[18px] md:text-[16px] sm:pt-0 sm:px-0 pt-3 px-4"
+        >
+          <a 
+            id="home"
+            class="hover:text-[#00abf0] block sm:inline py-3 sm:py-0 transition duration-300 cursor-pointer"
+            >Home</a
+          >
+          <a
+            id="about"
+            
+            class="hover:text-[#00abf0] block sm:inline py-3 sm:py-0 transition duration-300 cursor-pointer"
+            >About</a
+          >
+          <a
+            
+            id="resume"
+            class="hover:text-[#00abf0] block sm:inline py-3 sm:py-0 transition duration-300 cursor-pointer"
+            >Resume</a
+          >
+          <a
+            
+            id="blog"
+            class="hover:text-[#00abf0] block sm:inline py-3 sm:py-0 transition duration-300 cursor-pointer"
+            >Blog</a
+          >
+          <a
+            
+            id="contact"
+            class="hover:text-[#00abf0] block sm:inline py-3 sm:py-0 transition duration-300 cursor-pointer"
+            >Contact</a
+          >
+        </nav>
+      </div>
+    </header>
+    <div
+      class="home lg:px-20 md:px-10 sm:px-4 sm:flex grid grid-rows-2 -top-16 md:-top-1 md:mt-5 relative"
+    >
+      <!-- introduction -->
+      <div
+        class="home-content basis-1/2 mt-[310px] md:mt-24 sm:mt-24 md:space-y-7 sm:space-y-4 space-y-2 md:max-w-[600px] sm:max-w-[300px] px-4"
+      >
+        <h1 class="lg:text-5xl md:text-4xl mt-8 text-2xl font-bold">
+          Hi, I'm Moataz Hamdy
+        </h1>
+        <h3
+          class="capitalize lg:text-2xl md:text-xl sm:text-lg font-bold text-[#00abf0]"
+        >
+          front-end developer
+        </h3>
+        <p class="leading-6 sm:text-[15px] md:text-[16px] text-[14px]">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
+          debitis quas nam numquam atque porro aspernatur dolores, rerum
+          quibusdam! Modi praesentium cupiditate aliquid. Magni enim, vel eum
+          pariatur sunt mollitia ab id eaque, libero harum nihil minus quia quae
+          rerum.
+        </p>
+        <div class="btn-box flex md:space-x-28 sm:space-x-14 space-x-10">
+          <a
+            href="#"
+            class="md:w-[150px] h-[50px] sm:w-[100px] w-[90px] rounded-xl md:text-[19px] sm:text-[16px] text-[14px] inline-flex justify-center items-center md:font-[600] sm:font-[500] font-[500] text-[#ededed] bg-gradient-to-r from-[#00abf0] to-[#081b29] md:bg-[length:200%_100%] bg-right hover:bg-left transition-all duration-500"
+          >
+            Hire me
+          </a>
+          <a
+            href="#"
+            class="md:w-[150px] h-[50px] sm:w-[100px] w-[90px] rounded-xl md:text-[19px] sm:text-[16px] text-[14px] inline-flex justify-center items-center md:font-[600] sm:font-[500] font-[500] text-[#ededed] bg-gradient-to-r from-[#00abf0] to-[#081b29] md:bg-[length:200%_100%] bg-right hover:bg-left transition-all duration-500"
+          >
+            Let's Talk
+          </a>
+        </div>
+      </div>
+      <!-- my image -->
+      <div
+        class="absolute md:top-[20%] lg:top-[25%] sm:top-[35%] sm:left-[70%] top-[10%] basis-1/2 justify-center transform lg:-translate-x-1/2 md:-translate-x-1/4 sm:-translate-x-1/3 translate-x-[3.7rem]"
+      >
+        <div
+          class="bg-[#00abf0] lg:w-[20rem] lg:h-[20rem] md:h-[18rem] md:w-[18rem] sm:h-[15rem] sm:w-[15rem] w-[12rem] h-[12rem] rounded-full flex justify-center items-center lg:shadow-xl md:shadow-lg md:shadow-[#00abf0] sm:shadow-md sm:shadow-[#00abf0] shadow-sm shadow-[#00abf0] px-4 pb-7 lg:shadow-[#00abf0]"
+        >
+          <img
+            src="/imgs/me-removebg-preview.png"
+            alt="Profile Picture"
+            class="lg:w-[21rem] lg:h-[21rem] w-[14rem] h-[14rem] sm:w-[17rem] sm:h-[17rem] mg:w-[19rem] md:h-[19rem] rounded-full shadow-lg"
+          />
+        </div>
+      </div>
+    </div>
+    <!-- icons -->
+    <div
+      class="icons flex lg:ml-24 md:ml-14 sm:ml-8 ml-4 absolute bottom-[45%] sm:-bottom-5 md:-bottom-28 lg:mb-4 md:mb-6 justify-between gap-4"
+    >
+      <a href="#" class="relative">
+        <div class="icon-layer">
+          <span
+            class="fab fa-facebook-f icon-span span-1 text-[#1877F2] flex justify-center items-center"
+          ></span>
+          <span
+            class="fab fa-facebook-f icon-span span-2 text-[#1877F2] flex justify-center items-center"
+          ></span>
+          <span
+            class="fab fa-facebook-f icon-span span-3 text-[#1877F2] flex justify-center items-center"
+          ></span>
+          <span
+            class="fab fa-facebook-f icon-span span-4 text-[#1877F2] flex justify-center items-center"
+          ></span>
+          <i
+            class="fab fa-facebook-f w-full h-full rounded-md text-[#1877F2] flex justify-center items-center"
+          ></i>
+        </div>
+      </a>
+
+      <a href="#" class="relative">
+        <div class="icon-layer">
+          <span
+            class="fab fa-twitter icon-span span-1 text-[#1DA1F2] flex justify-center items-center"
+          ></span>
+          <span
+            class="fab fa-twitter icon-span span-2 text-[#1DA1F2] flex justify-center items-center"
+          ></span>
+          <span
+            class="fab fa-twitter icon-span span-3 text-[#1DA1F2] flex justify-center items-center"
+          ></span>
+          <span
+            class="fab fa-twitter icon-span span-4 text-[#1DA1F2] flex justify-center items-center"
+          ></span>
+          <i
+            class="fab fa-twitter w-full h-full rounded-md text-[#1DA1F2] flex justify-center items-center"
+          ></i>
+        </div>
+      </a>
+      <a href="#" class="relative">
+        <div class="icon-layer">
+          <span
+            class="fab fa-linkedin-in icon-span span-1 text-[#0077B5] flex justify-center items-center"
+          ></span>
+          <span
+            class="fab fa-linkedin-in icon-span span-2 text-[#0077B5] flex justify-center items-center"
+          ></span>
+          <span
+            class="fab fa-linkedin-in icon-span span-3 text-[#0077B5] flex justify-center items-center"
+          ></span>
+          <span
+            class="fab fa-linkedin-in icon-span span-4 text-[#0077B5] flex justify-center items-center"
+          ></span>
+          <i
+            class="fab fa-linkedin-in w-full h-full rounded-md text-[#0077B5] flex justify-center items-center"
+          ></i>
+        </div>
+      </a>
+      <a href="#" class="relative">
+        <div class="icon-layer">
+          <span
+            class="fab fa-instagram icon-span span-1 gradient-text flex justify-center items-center"
+          ></span>
+          <span
+            class="fab fa-instagram icon-span span-2 gradient-text flex justify-center items-center"
+          ></span>
+          <span
+            class="fab fa-instagram icon-span span-3 gradient-text flex justify-center items-center"
+          ></span>
+          <span
+            class="fab fa-instagram icon-span span-4 gradient-text flex justify-center items-center"
+          ></span>
+          <i
+            class="fab fa-instagram w-full h-full rounded-md gradient-text flex justify-center items-center"
+          ></i>
+        </div>
+      </a>
+    </div>
+
+    <script src="script.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+  </body>
+</html>
