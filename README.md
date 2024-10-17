@@ -8,7 +8,6 @@ Welcome to my portfolio website! This project showcases my work, skills, and exp
 - [Technologies Used](#technologies-used)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Live Demo](#live-demo)
 
 ## Features
 
@@ -38,7 +37,3 @@ To run this project locally, follow these steps:
 ## Usage
 
 Simply open the `index.html` file in a web browser to view the website. You can navigate through different sections to explore my work and projects.
-
-## Live Demo
-
-You can view a live version of the portfolio website at: [Your Live Demo Link](#)
